@@ -1,0 +1,6 @@
+os: osx
+
+before_install:
+  - curl https://nixos.org/nix/install | sh
+
+script: nix-shell --run true && touch test
